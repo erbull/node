@@ -12,4 +12,4 @@ app.get("/", function(rq, rs){
     });
 });
 
-app.listen(80);
+app.listen(process.env.PORT);
