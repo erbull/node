@@ -4,7 +4,7 @@
   "description": "This example is so cool.",
 
   "scripts": {
-    "start": "node web.js"
+    "start": "node app.js"
   },
   "keywords": [
     "example",
