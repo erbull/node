@@ -2,9 +2,9 @@
 //var http = require('http');
 var fs = require('fs');
 var express = require("express");
-var path = require('path');
+//var path = require('path');
 var app = express();
-app.use('/public', express.static(path.join(__dirname, 'public')));
+//app.use('/public', express.static(path.join(__dirname, 'public')));
 //var server = http.createServer(function(rq, rs){
 //    rs.write("Mehaba");
 //    rs.end();
