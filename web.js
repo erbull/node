@@ -3,7 +3,7 @@ var http = require('http');
 var fs = require('fs');
 
 var server = http.createServer(function(rq, rs){
-    rs.write(rq);
+    rs.write("Merhaba");
     rs.end();
 });
 
