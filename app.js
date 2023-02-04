@@ -10,7 +10,7 @@ var app = express();
 //    rs.end();
 //});
 
-app.get('/', (rq, rs) => {
+app.get('*', (rq, rs) => {
     //fs.readFile("index.html", function(err, data){
     //    rs.write(data);
     //    rs.end();
