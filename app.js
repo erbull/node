@@ -1,15 +1,20 @@
 //
-var fs = require("fs");
-var express = require("express");
-var path = require('path');
-var app = express();
-app.use('/public', express.static(path.join(__dirname, 'public')));
-
-app.get("/", function(rq, rs){
-    fs.readFile("index.html", function(err, data){
-        rs.write(data);
-        rs.end();
-    });
+var http = require('http');
+var fs = require('fs');
+//var express = require("express");
+//var path = require('path');
+//var app = express();
+//app.use('/public', express.static(path.join(__dirname, 'public')));
+var server = http.crateServer(function(rq, rs){
+    rs.write(Mehaba);
+    rs.end();
 });
 
-app.listen(process.env.PORT);
+//app.get("/", function(rq, rs){
+//    fs.readFile("index.html", function(err, data){
+//        rs.write(data);
+//        rs.end();
+//    });
+//});
+
+server.listen(process.env.PORT);
