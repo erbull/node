@@ -9,7 +9,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.get('/', (rq, rs) => {
     fs.readFile("index.html", function(err, data){
-        rs.render(data);
+        rs.write(data);
         rs.end();
     });
 });
