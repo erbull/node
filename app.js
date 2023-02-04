@@ -17,5 +17,5 @@ var server = http.crateServer(function(rq, rs){
 //    });
 //});
 
-server.listen(5000);
-//server.listen(process.env.PORT);
+//server.listen(5000);
+server.listen(process.env.PORT);
