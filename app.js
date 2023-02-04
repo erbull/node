@@ -19,4 +19,4 @@ app.get('/', (rq, rs) => {
 });
 
 //server.listen(5000);
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || 5000);
