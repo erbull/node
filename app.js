@@ -10,11 +10,12 @@ var app = express();
 //    rs.end();
 //});
 
-app.get(function(rq, rs){
-    fs.readFile("index.html", function(err, data){
-        rs.write(data);
-        rs.end();
-    });
+app.get('/', (rq, rs) => {
+    //fs.readFile("index.html", function(err, data){
+    //    rs.write(data);
+    //    rs.end();
+    //});
+    rs.write('hello world')
 });
 
 //server.listen(5000);
