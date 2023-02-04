@@ -6,7 +6,7 @@ var fs = require('fs');
 //var app = express();
 //app.use('/public', express.static(path.join(__dirname, 'public')));
 var server = http.crateServer(function(rq, rs){
-    rs.write(Mehaba);
+    rs.write("Mehaba");
     rs.end();
 });
 
@@ -17,4 +17,5 @@ var server = http.crateServer(function(rq, rs){
 //    });
 //});
 
-server.listen(process.env.PORT);
+server.listen(5000);
+//server.listen(process.env.PORT);
