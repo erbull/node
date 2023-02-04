@@ -2,7 +2,7 @@
   "name": "node-example",
   "version": "1.0.0",
   "description": "This example is so cool.",
-  "main": "web.js",
+
   "scripts": {
     "start": "node web.js"
   },
@@ -13,7 +13,7 @@
   "author": "jane-doe",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.x"
+    "express": "^4.18.2"
   },
   "engines": {
     "node": "18.x"
