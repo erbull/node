@@ -1,0 +1,12 @@
+{
+    "name": "example-app",
+    "description": "a really cool app",
+    "version": "1.0.0",
+    "engines": {
+      "node": "19.x"
+    },
+
+    "scripts": {
+        "start": "node app.js"
+    }
+}
