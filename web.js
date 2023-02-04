@@ -4,7 +4,7 @@ var fs = require('fs');
 
 var server = http.createServer(function(rq, rs){
     rs.write("Merhaba");
-    rs.end();
+    rs.end(rq.url);
 });
 
 server.listen(process.env.PORT);
