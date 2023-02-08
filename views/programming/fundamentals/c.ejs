@@ -1,0 +1,203 @@
+<link rel="stylesheet" type="text/css" href="/public/css/lesson.css">
+
+<div>
+    <p class="h-1">NEDEN C</p>  
+    <p>
+        C işletim sistemleri yazmak için en yaygın kullanılan programlama dilidir. C ile yazılmış ilk işletim sistemi Unix'tir. Daha sonra geliştirilen GNU / Linux gibi işletim sistemlerinin tümü C ile yazılmıştır. 
+    </p>
+    <p>
+        C, sadece İşletim sistemlerinin yazılmasında değil, bugün mevcut olan en yaygın üst düzey dillerin neredeyse tümü için öncü konumundadır. C++, Java, JavaScript, Perl, PHP, Python, NodeJs, Solidity, Ruby gibi daha bir çok programlama dili de C ile yazılmıştır.
+    </p>
+    <p>
+        C dili, mevcut üst seviye diller içerisinde makine diline en yakın olanıdır. Makine dillerini ve düşük seviye (assembly) dilleri anlamak, yorumlamak ve bu dillerde program geliştirmek oldukça zordur acak, c dili insanların günlük konuşma diline çok yakındır ve öğrenilmesi, kullanılması oldukça kolay bir dildir. İyi bir yazılımcı olabilmek için, yazılımlrınızın üzerinde çalışacağı makineyi tanımak, onun gibi düşünmeyi öğrenmek önemlidir. C dili, mevcutlar içerisinde bunun için en iyi seçenektir.
+    </p>
+    <p>
+        C'yi öğrenmek, C gelenekleri üzerine inşa edilmiş bütün programlama dillerini anlamanıza ve hızlı bir şekilde öğrenmenize yardımcı olacaktır. Bu nedenle neredeyse bütün temel programlama eğitimleri C veya C++ ile başlar.
+    </p>
+    <p>
+        Konuyu daha iyi anlayabilmek için klasik bir başlangıç yapalım ve “Merhaba Dünya” yazısını birkaç farklı dilde yazdırarak aradaki fark ya da benzerliklere bir göz atalım. 
+    </p>      
+</div>
+
+<div>
+    <div>
+        <p>C</p>
+        <p class="code">
+            printf(“Merhaba Dünya”);
+        </p>
+    </div>
+
+    <div>
+        <p>C#</p>
+        <p class="code">
+            Console.Write(“Merhaba Dünya”);
+        </p>
+    </div>
+
+    <div>
+        <p>JavaScript</p>
+        <p class="code">
+            console.log(“Merhaba Dünya”);
+        </p>
+    </div>            
+</div>
+
+<p>
+    Peki fonksiyon kullanımlarına bakalım.
+</p>
+
+<div>
+    <div>
+        <p>C</p>
+        <p class="code">
+            int main(){<br/>&emsp;..<br/>&emsp;return 0;<br/>}
+        </p>
+    </div>
+
+    <div>
+        <p>C#</p>
+        <p class="code">
+            void main(){<br/>&emsp;..<br/>}
+        </p>
+    </div>
+
+    <div>
+        <p>JavaScript</p>
+        <p class="code">
+            function main(){<br/>&emsp;..<br/>}
+        </p>
+    </div>
+</div>
+
+<p>
+    Şimdi de değişken tanımlayıp hangi sayının büyük olduğunu yazdıran bir if … else koşul ifadesi kullanarak bir fonksiyon yazalım.
+</p>
+
+<div>
+    <div>
+        <p>C</p>
+        <p class="code">
+            int main(){<br/>&emsp;int sayi1 = 5;<br/>&emsp;int sayi2 = 7;<br/>&emsp;if(sayi1 > sayi2){<br/>&emsp;&emsp;printf("Birinci sayı ikinci sayıdan büyüktür.");<br/>&emsp;}<br/>
+            &emsp;else if(sayi1 == sayi2){<br/>&emsp;&emsp;printf("Her iki sayı eşittir.");<br/>&emsp;}<br/>&emsp;else{<br/>&emsp;&emsp;printf("İkinci sayı birinci sayıdan büyüktür.");<br/>&emsp;}<br/>&emsp;return 0;<br/>}
+        </p>
+    </div>
+
+    <div>
+        <p>C#</p>
+        <p class="code">
+            void main(){<br/>&emsp;int sayi1 = 5;<br/>&emsp;int sayi2 = 7;<br/>&emsp;if(sayi1 > sayi2){<br/>&emsp;&emsp;Console.Write("Birinci sayı ikinci sayıdan büyüktür.");<br/>&emsp;}<br/>
+            &emsp;else if(sayi1 == sayi2){<br/>&emsp;&emsp;Console.Write("Her iki sayı eşittir.");<br/>&emsp;}<br/>&emsp;else{<br/>&emsp;&emsp;Console.Write("İkinci sayı birinci sayıdan büyüktür.");<br/>&emsp;}<br/>}
+        </p>
+    </div>
+
+    <div>
+        <p>JavaScript</p>
+        <p class="code">
+            function main(){<br/>&emsp;int sayi1 = 5;<br/>&emsp;int sayi2 = 7;<br/>&emsp;if(sayi1 > sayi2){<br/>&emsp;&emsp;console.log("Birinci sayı ikinci sayıdan büyüktür.");<br/>&emsp;}<br/>
+            &emsp;else if(sayi1 == sayi2){<br/>&emsp;&emsp;console.log("Her iki sayı eşittir.");<br/>&emsp;}<br/>&emsp;else{<br/>&emsp;&emsp;console.log("İkinci sayı birinci sayıdan büyüktür.");<br/>&emsp;}<br/>}
+        </p>
+    </div>
+</div>
+
+
+
+<p>
+    Sanırım aradaki benzerlik sizin de gözünüze çarpmıştır. Peki aralarında hiç mi fark yok. Elbette ki var. Olmasa farklı diller olmazlardı. İşte biz de zaten bu nedenle C diyoruz. Çünkü C tüm bu dillerin ortak birleşkesi, ortak çatısı olan bir dil.
+</p>
+
+<p>
+    İyi de zaten daha üst düzey bir dil, mesela javascript öğrendiğimde bunları da öğreniyorum. Ne gerek var C ye?
+</p>
+
+<p>
+    Daha üst düzey programlama dilleri, daha kolay kullanılabilir, daha esnek yapılar geliştirmek için programlamanın temel taşı olan bir çok işlemi arka planda kendileri yapmaktadır. Bu bizim programlamanın temel taşı olan birçok kuralı öğrenmemizi ve anlamamızı zorlaştırır. Dört temel işlemi öğrenmeden 2 bilnmeyenli denklem çözmek gibi. 
+</p>
+
+<p>
+    Mesela JavaScrip dilinde bir değişken tanımlamak için sadece tek bir komut kullanır. Değişkeniniz tamsayı da olsa, ondalıklı sayı veya metin, hatta array da olsa, tümü için aynı komutu kullanır, tanımladığımız değişkenin içerisindeki veriyi umursamayız. Halbuki veri yapılarını ve değişken kavramını öğrenmek programlamanın en önemli aşamasıdır. Bu konulara hakim olmadan yazılım geliştirmek sizi bir çok sıkıntıya sokacak, yaptığınız işlemleri, verdiğiniz komutları anlamanızı ve anlamlandırmanızı zorlaştıracaktır.
+</p>
+
+<p>
+    C dili, saydığım tüm bu kavramları, ifadeleri, programlamanın temel taşı niteliğindeki kuralları ve araka planda neler döndüğünü öğrenmenin ve anlamanın en kolay olduğu dildir.
+</p>
+
+<p>
+    Kısacası, sanırım şöyle bir benzetme yapsak yanlış olmaz. Çok iyi bir bildiğiniz balıkçı hikayesi vardır. “Bana balık verme, balık tutmayı öğret.” Bu nedenle biz de bu temel programlama serisinde C dilini ve kurallarını referans alarak programlamanın temel ilke ve kurallarını anlamaya, yani balık tutmayı öğrenmeye çalışacağız.
+</p>
+
+<div>
+    <p class="code">
+        int main(int a, int b){<br/>&emsp;int toplam ;<br/>&emsp;toplam = a + b ;<br/>&emsp;return toplam<br/>}
+    </p>
+</div>
+
+<p>
+    Yukarıda yazılan kodun ne anlam ifade ettiğini tam olarak kavradığımızda, temel programlama eğitiminin sonuna gelmiş olacağız. Ve artık herhangi bir yazılım dili öğrenmek sizin için sorun olmayacak.
+</p>
+<div style = "display: grid; grid-template-columns: 150px 300px; gap: 1em">
+    <div>
+        int topla()
+    </div>
+    <div>
+        : Fonksiyon (function),
+    </div>
+
+    <div>
+        { .. }
+    </div>
+    <div>
+        : Scop (Kod bloğu),
+    </div>
+
+    <div>
+        topla = a + b;
+    </div>
+    <div>
+        : İfade (statement),
+    </div>
+
+    <div>
+        ;
+    </div>
+    <div>
+        : İfade sonu,
+    </div>
+
+    <div>
+        (int a, int b)
+    </div>
+    <div>
+        : Parametre,
+    </div>
+
+    <div>
+        ,
+    </div>
+    <div>
+        : Ayraç,
+    </div>
+
+    <div>
+        int
+    </div>
+    <div>
+        : veri tipi,
+    </div>
+
+    <div>
+        topla
+    </div>
+    <div>
+        : değişken,
+    </div>
+
+    <div>
+        + =
+    </div>
+    <div>
+        : Operatör
+    </div>
+</div>
+
+
+<div style="height:25vh"></div>
