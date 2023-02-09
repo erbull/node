@@ -13,9 +13,11 @@
   "author": "jane-doe",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "express-ejs-layouts": "^2.5.1"
+    "express-ejs-layouts": "^2.5.1",
+    "nodemailer": "^6.9.1"
   },
   "engines": {
     "node": "18.x"
