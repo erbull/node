@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Erdoğan Bülbül</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+</head>
+
+<body>
+    <!--Header Menu-->
+    <nav class="navbar">
+        <a href="/"><img class="logo" src="/public/img/logo.png"/></a>
+        <ul>
+            <li class="menu-item"><a href="/">Ana Sayfa</a></li>
+            <li class="menu-item"><a href="/computer">Bilgisayar</a></li>
+            <li class="menu-item dropdown">
+                <a class="dropbtn">Programlama</a>
+                <div class="dropdown-content">
+                    <a href="/programming/fundamentals">Programlamanın Temelleri</a>
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">NodeJS</a>
+                    <a href="#">React JS</a>
+                    <a href="#">.Net Core</a>
+                </div>
+            </li>
+            <li class="menu-item dropdown">
+                <a class="dropbtn">Örnekler</a>
+                <div class="dropdown-content">
+                    <a href="/examples/calculator">Hesap Makinesi</a>
+                    <a href="/examples/cube">Üç Boyutlu Küp</a>
+                    <a href="/examples/getset">Get ve Set metodları</a>
+                    <a href="/examples/sign">Üye Kayıt Sayfası</a>
+                </div>
+            </li>
+            <li  class="menu-item"><a href="/contact">İletişim</a></li>
+            <div class="animation"></div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <%- body %>
+    </div>
+
+    <div class="footer">Developped by Erdoğan Bülbül - 2023</div>
+    
+    <script>
+        var elements = document.querySelectorAll(".menu-item");
+        hareket(elements[0]);
+        elements.forEach(element => {
+            element.addEventListener("mouseover", function() {
+                hareket(element);
+            });
+        });
+
+        function hareket(element){
+            var target = document.querySelector(".animation");
+            target.style.left = element.offsetLeft+"px";
+            target.style.top = element.offsetTop+"px";   
+            target.style.height = element.clientHeight + "px";
+            target.style.width = element.clientWidth + "px";
+        }
+    </script>
+</body>
+</html>
+

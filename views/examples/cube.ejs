@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="/public/css/cubeexample.css">
+<div style="display: flex; justify-content: space-between;">
+	<div style="display: flex;">
+		<div>
+			<div>Boyut</div>
+			<input id="size" type="text" size="3" maxlength="3" value="300" onblur="cubeSize()"><span>px</span>
+			<div style="margin-top: 1em;">Opacity</div>
+			<input id="opac" type="text" size="3" maxlength="3" value="70" onblur="opac()"><span>/100</span>
+			<div style="margin-top: 1em;">Perspective</div>
+			<input id="pers" type="text" size="3" maxlength="5" value="3000" onblur="perspect()"><span>px</span>		
+		</div>
+		<div style="display: grid; grid-template-columns: 1em 50px 20px; gap:5px; margin-left: 5em; height: 8em;">
+			<div></div> <div>Rotate</div> <div></div>
+			<div>X:</div> <input id="x" type="text" size="3" maxlength="4" onblur="rotate()"> <div>px</div>
+			<div>Y:</div> <input id="y" type="text" size="3" maxlength="4" onblur="rotate()"> <div>px</div>
+			<div>Z:</div> <input id="z" type="text" size="3" maxlength="4" onblur="rotate()"> <div>px</div>
+		</div>
+	</div>
+
+	<div>
+		<div style="display: flex; align-items: center;">
+			<p id="move-note" style="color:red; margin-left:1em">Mouse ile tutup taşıyabilirsiniz.</p>
+			<input id="move" type="button" value="Rotate" style="margin-left: 2em; padding:5px; height: 3em; width: 6em; text-align: center;" onclick="modChange()">
+		</div>		
+	</div>
+</div>
+
+<div class="cube-base">
+	<div id="cube" class="cube" onmouseover="changeCursor()" onmouseleave="cursorDefault()">
+		<div class="face front">Ön</div>
+		<div class="face back">Arka</div>
+		<div class="face left">Sol</div>
+		<div class="face right">Sağ</div>
+		<div class="face top">Üst</div>
+		<div class="face bottom">Alt</div>
+	</div>
+</div>
+
+<script src="/public/js/cube.js"></script>

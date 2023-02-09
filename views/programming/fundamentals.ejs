@@ -1,0 +1,79 @@
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: calc(100vh - 200px);
+        width: 100%;
+        align-items: center;
+    }
+
+    .main-img{
+        width:75%;
+        margin-inline: 10%;
+    }
+
+    .icon{
+        height: 2em;
+        width: 2em;
+        margin-right: 1em;
+    }
+
+    .line{
+        display: flex;
+        align-items: center;
+        margin-block: 1em;
+    }
+</style>
+
+<div class="main">
+    <div>
+        <img class="main-img" src="/public/img/programming.png"/>
+    </div>
+    <div>
+        <h2>Programlamanın Temelleri</h2>
+        <div class="line">
+            <div>
+                <img class="icon" src="/public/img/giris.png"/>  
+            </div>
+            <div>
+                <a href="/programming/fundamentals/giris">Giris (Temel Kavramlar)</a>
+            </div>  
+        </div>
+
+        <div class="line">
+            <div>
+                <img class="icon" src="/public/img/c.png"/>  
+            </div>
+            <div>
+                <a href="/programming/fundamentals/c">Neden C</a>
+            </div>  
+        </div>
+
+        <div class="line">
+            <div>
+                <img class="icon" src="/public/img/datastructure.png"/>  
+            </div>
+            <div>
+                <a href="/programming/fundamentals/datastructure">Veri Yapıları - Veriden Bilgiye</a>
+            </div>  
+        </div>
+    
+        <div class="line">
+            <div>
+                <img class="icon" src="/public/img/cmd.png"/>
+            </div>
+            <div >
+                <a href="/programming/fundamentals/cmd">Kodlarımızı nasıl yazacağız?</a>
+            </div>  
+        </div>
+    
+        <div class="line">
+            <div>
+                <img class="icon" src="/public/img/hello.png"/>  
+            </div>
+            <div>
+                <a href="/programming/fundamentals/hello">Başlıyoruz!<br/>Merhaba Dünya</a>
+            </div>  
+        </div>
+    </div>            
+</div>

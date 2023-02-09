@@ -1,0 +1,191 @@
+<link rel="stylesheet" type="text/css" href="/public/css/lesson.css">
+
+<div>
+    <p class="h-1">İŞLETİM SİSTEMLERİ</p>            
+</div>
+
+<div>
+    <p class="h-2">İşlerim Sistemi Nedir?</p>
+    <p>
+        Bilgisayar donanımının doğrudan denetimi ve yönetiminden, temel sistem işlemlerinden ve uygulama yazılımlarını çalıştırmaktan sorumlu olan sistem yazılımıdır. Bilgisayar açılırken hafızaya yüklenir, bilgisayar donanım kaynaklarını yönetir ve çeşitli uygulama yazılımları için hizmet sağlar. Birden çok yazılım aynı anda çalışıyorsa, her yazılıma yeterli sistem kaynağını ayırmaktan ve birbirleri ile çakışmamalarını sağlamaktan da sorumludur Bilgisayar sistemini kullanan kullanıcılarla uygulama programları ve bilgisayar donanımı arasında aracılık görevi yapar. OS (operating system) diye kısaltılır.
+    </p> 
+    <p>
+        İşletim sistemleri sadece bilgisayarlarda değil, cep telefonları, oyun konsolları gibi işlemci ve hafıza birimleri içeren yönetilebilir aygıtlarda da bulunur. 
+    </p>        
+</div> 
+
+<div class="inline">
+    <div> 
+        <p class="h-2">İşlerim Sistemlerinin Önemi?</p>
+        <p>
+            İşletim sisteminin amacı ise, bilgisayar kullanıcılarına programlarını çalıştırabilecekleri bir ortam hazırlamak ve bilgisayar donanımının etkin kullanımını sağlamaktır.
+            Bir bilgisayar sisteminin genel olarak dört bileşeni vardır. Bunlar; 
+
+        </p>
+        <p class="madde">
+            Donanım (CPU, Bellek, G/Ç Aygıtları), 
+        </p>
+        <p class="madde">
+            İşletim sistemi, 
+        </p>
+        <p class="madde">
+            Uygulama programları (Compilers, Assembler, Loaders, Database Systems, vb.), 
+        </p>
+        <p class="madde">
+            Kullanıcılar (İnsanlar, diğer bilgisayarlar),
+        </p>
+    </div>
+
+    <div>
+        <img class="img-large" src="/public/img/os1.png">
+    </div>
+</div>
+
+<div>
+    <p class="h-2">İşletim Sistemlerinin Görevleri</p> 
+    <p>
+        <b>1- İşlem Yönetimi</b> 
+    </p>
+    <p>
+        Uygulama programlarının belirli bir sırada ve zamanda çalıştırılmasının sağlanması olarak özetlenebilir, örneğin bilgisayarda aynı anda müzik dinlerken, internette gezinti yapabilir, diğer taraftan hafıza kartındaki resimlerbilgisayara kopyalanabilirburada sayılan 3 işlemin aynı anda gerçekleştirilmesi işletim sisteminin görevlerinden biridir.
+    </p> 
+    <p>
+        <b>2- Bellek Yönetimi </b> 
+    </p>
+    <p>
+        Bilgisayarda kurulu olan tüm programlar diskte depolanır. Bir program çalıştırıldığı zaman önce disk üzerindeki programa ait veriler ana belleğe yüklenir. Yani çalışan tüm programların ana bellekte olması gerekir. Dolayısıyla bir programa çalışma süresi boyunca bellek tahsis edilmesi, işlem bitince de ayrılan bellek alanının boşaltılması işletim sisteminin görevlerindendir.
+    </p> 
+    <p>
+        <b>3- Giriş-Çıkış Aygıtlarının Yönetimi </b> 
+    </p>
+    <p>
+        Klavyeden bilgi girişi, yazıcıdan çıktı alma, tarayıcıdan bir resmin taranması, dosya kopyalama vs... gibi bilgisayar sistemi ile tüm çevre birimleri arasındaki veri alışverişinin sağlanması işletim sisteminin diğer görevlerinden biridir.
+    </p> 
+    <p>
+        <b>4- Dosya Yönetimi </b> 
+    </p>
+    <p>
+        Bilgisayardaki tüm verilen disk, cd/dvd, hafıza kartları gibi depolama birimlerinde tutulurlar. Bu verilerin içerisinde saklandığı dosya ve klasörlerin yönetimi, bu verilere erişim, bilgi yazma/okuma gibi görevler yine işletim sistemi tarafından yürütülürler.
+    </p>
+    <p>
+        <b>5- Kullanıcı Yönetimi </b> 
+    </p>
+    <p>
+        Windows ve Unix gibi işletim sistemleri aynı bilgisayar sistemini birden fazla kullanıcının kullanmasına olanak sağlar. Genel olarak her kullanıcının bir kullanıcı adı ve şifresi vardır. Her kullanıcı, kendine özgü bir masa üstü ortamı içerisinde kendi klasörlerini oluşturur ve programlarını tanımlar. Bir kullanıcı, erişim izni olmadan diğer bir kullanıcının dosya ya da dizinlerini göremez. Sistemin birden fazla kullanıcı arasında oluşturulan yetkilerle herhangi bir karışıklık olmadan paylaştırılması yine işletim sisteminin görevlerindendir.
+    </p>
+</div>
+
+<div>
+    <img class="img-large" src="/public//img/os2.png"/>
+</div>            
+
+<div>
+    <p class="h-3">İşletim Sisteminde Katmanlar</p>            
+</div>
+
+<div class="inline">
+    <div>
+        <img class="img-small" src="/public/img/katman.png"/>
+    </div>
+
+    <div>
+        <p class="h-3">Çekirdek (Kernel)</p>
+        <p>
+            İşletim sisteminin ana bileşeni olan çekirdek, uygulama programları ile donanım bileşenleri arasında köprü vazifesi görür. İşlemcide çalışan proseslerin yönetimi, bellek yönetimi ve Giriş/Çıkış cihazlarının yönetimi gibi birçok temel işlev çekirdek tarafından gerçekleştirilir.
+        </p> 
+        <p>
+            Çekirdek bilgilerin sabit sürücüden bilgisayar belleğine kopyalanmasını sağlar. İşletim sisteminin ana kısmını teşkil eder. Bütün uygulamaları başlatır. Birimleri ve belleği düzenler. Bellekte ayarlama yapar. Diğer gerekli fonksiyonları çalıştırır.
+        </p> 
+        <p class="h-3">Kabuk (Shell)</p>
+        <p>
+            Çekirdeğin sağladığı servislere erişim sağlayan bir ara katmandır. İki farklı kabuk çeşidi vardır:
+        </p> 
+        <p class="h-3">Komut istemi (CLI: command-line interface)</p>
+        <p>Kullanıcının yapmak istediği işlemleri daha hızlı yapılmasını sağlar. (DOS)</p>  
+        <p class="h-3">Grafiksel arayüz (GUI: graphical user interface)</p>
+        <p>Kullanıcının yapmak istediği işlemleri daha hızlı tarif edebilmesini sağlar. (Windows)</p> 
+    </div>
+</div>
+
+<div>
+    <p class="h-2">İŞLETİM SİSTEMLERİNDE TEMEL KAVRAMLAR</p>            
+</div>
+
+<div>
+    <p class="h-3">Proses (Process) </p>
+    <p>
+        Bir işletim sisteminde anahtar kavram Proses’ dir. Belleğe yüklenmiş ve işlemcide (CPU) yürütülmekte olan bir program olarak tanımlanabilir. Uygulamalar diskte çalışmaz halde bulunurken “program” olarak tanımlanır. Bir program (yürütülebilir dosya ".exe") kendi başına pasif komut yığınıdır. Proses (Process) ise bu komutların aktif olarak yürütülmesidir (çalıştırılmasıdır).
+    </p>
+    <p>
+        Genel anlamda her program bir process olarak düşünülebilir, ancak bir programın birden fazla processi olabileceği gibi her process, yeni başka processlerde üretebilir (fork) . 
+    </p>
+</div>
+
+<div>
+    <p class="h-3">İş (Job)</p>
+    <p>
+        Kullanıcıların, bilgisayar sisteminde bağımsız bir bütün olarak ve belli bir sıra dahilinde işlenmesini istedikleri hizmetler kümesine “İş (Job)” denilebilir. Bilgisayarın sistemlerine gönderilen işler, bir veya birden fazla programın ayrı ayrı işletileceği alt adımlardan oluşabilir. İşler genellikle adımların art arda uygulanacağı biçimde düzenlenir. Her adım, bir öncekinin sonuçlanması üzerine işletime girer.
+    </p>
+    <p>
+        Bir örnek verecek olursak, günümüzdeki işletim sistemi olan MS-DOS işletim sisteminde “*.bat” uzantılı dosyalar bir anlamda iş adıyla adlandırılabilir.
+    </p>
+</div>
+
+<div>
+    <p class="h-3">Task (Görev)</p>
+    <p>
+        Bilgisayarda uygulanacak bir işi oluşturan öğelerden her biri task(görev) olarak adlandırılır.
+    </p>
+    <p>
+        Bir bilgisayar sisteminde hizmet üretimi, bağımlı veya bağımsız birçok işlevin birlikte yürütülmesiyle sağlanır. Her işletim sisteminin, çalışan programları ve işlemleri görüntülemeye yardımcı olan bir izleme bileşeni bulunur. Task Manager adı verilen bu program yardımıyla bilgisayarınızda hangi işlemlerin gerçekleştiğini, bilgisayarınızın ne kadar kaynak tükettiğini ve çok daha fazlasını öğrenebilirsiniz.
+    </p>
+</div>
+
+<div>
+    <p class="h-3">Önyükleme (booting)</p>
+    <p>
+        Önyükleme, işlemi işletim sisteminin bilgisayar belleğine kopyalanmasıyla gerçekleşir. Önyükleme iki şekilde incelenir: 
+    </p>
+    <p class="madde">
+        Soğuk Önyükleme: Bilgisayarın açılması esnasında işletim sistemin yüklenmesi. 
+    </p>
+    <p class="madde">
+        Sıcak Önyükleme: Bilgisayarın açık olduğu esnasında işletim sistemin tekrar yüklenmesi. 
+    </p>
+</div>
+
+<div>
+    <p class="h-3">Boot/Reboot (Yeniden Başlatma)</p>
+    <p>
+        Bilgisayarın tamamen kapatılmasılarak işletim sisteminin yeniden başlatılmasıdır.
+    </p>
+</div>
+
+<div>
+    <p class="h-3">İstemci / Sunucu (Client/Server)</p>
+    <p>
+        İstemci(Client) / Sunucu(Server) modelinde, bilgi isteyen aygıta istemci, isteğe yanıt veren aygıta sunucu denir. İstemci ve sunucu işlemlerinin uygulama katmanında olduğu kabul edilir. İstemci, bir veya daha fazla veri akışını istemciye göndererek yanıt veren sunucudan veri talep ederek alışverişe başlar. Uygulama katmanı protokolleri, istemciler ve sunucular arasındaki istek ve yanıtların tasarımını tanımlar. 
+    </p>
+    <p>
+        İstemci / sunucu ağına örnek olarak, çalışanların e-posta göndermek, almak ve saklamak için bir şirket e-posta sunucusu kullandıkları şirket ortamı verilebilir. Çalışan bir bilgisayardaki e-posta istemcisi, okunmamış postalar için e-posta sunucusuna bir istek gönderir. Sunucu, istenen e-postayı istemciye göndererek yanıt verir.
+    </p>
+</div>
+
+<div>
+    <p class="h-3">Terminal (Uç)</p>
+    <p>
+        Elektronik veya elektromekanik bir donanım cihazıdır. Bir bilgisayara veya bir bilgi işlem sistemine veri girmek ve bu verilerden kopyalamak için kullanılabilir. 
+    </p>
+    <p>
+        Günümüzde, genel olarak iki çeşit terminal kullanılmaktadır. Bunlardan birisi şu an kullanmakta olduğumuz bilgisayar şeklinde olandır. Yani, kendi işletim sistemini kullanarak istemci konumunda olanlardır. Diğeri ise, sistemi olmayan yani sadece monitör ve klavyeden oluşan sistemlerdir. Bunlara Dumb Terminal (aptal terminal) denir. Bunlar içindeki özel bir kartla küçük bir sunucuya bağlı olarak çalışır ve istemci durumunda bulunur. Örnek olarak bankalardaki memurların kullandığı bilgisayarları gösterebiliriz.
+    </p>
+</div>
+
+<div>
+    <p class="h-3">Donanım Sürücüleri (Drivers)</p>
+    <p>
+        İşletim sistemlerinin bağlı donanımları kullanabilmesi için uygun sürücü yazılımına sahip olması gerekir. Her işletim sistemi, yaygın kullanıma sahip bir çok donanım için yerleşik sürücüler bulundurur. Ancak işletim sisteminden sonra piyasaya çıkan donanımların veya yenilenen sürücü yazılımlarının sisteme eklenmesi gerekir. Yerleşik sürücüler, bir donanımı sisteme tanıtsa bile tüm fonksiyonları ile çalıştırmayabilir. Üretici web sitesinden güncel sürücüleri indirmek ve işletim sistemine eklemek en doğru yöntemdir.
+    </p>
+</div>
+
+<div style="height:25vh"></div>
