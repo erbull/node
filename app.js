@@ -23,4 +23,4 @@ app.use("/programming/fundamentals", fundamentalsController);
 app.use("/examples", examplesController);
 app.use("/contact", contactController);
 
-app.listen(environment.PORT || 8080);
+app.listen(process.env.PORT || 8080);
