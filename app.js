@@ -21,6 +21,6 @@ app.use("/", homeController);
 app.use("/computer", computerController);
 app.use("/programming/fundamentals", fundamentalsController);
 app.use("/examples", examplesController);
-app.use("/contact", contactController)
+app.use("/contact", contactController);
 
 app.listen(environment.PORT || 8080);
